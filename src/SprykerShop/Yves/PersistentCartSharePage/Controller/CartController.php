@@ -33,12 +33,6 @@ class CartController extends AbstractController
      */
     protected const IS_LOADING_UPSELLING_PRODUCTS_VIA_AJAX_ENABLED = false;
 
-    /**
-     * @param string $resourceShareUuid
-     * @param \Symfony\Component\HttpFoundation\Request $request
-     *
-     * @return \Spryker\Yves\Kernel\View\View
-     */
     public function previewAction(string $resourceShareUuid, Request $request): View
     {
         $response = $this->executePreviewAction($resourceShareUuid, $request);

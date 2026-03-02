@@ -13,9 +13,6 @@ use SprykerShop\Yves\PersistentCartSharePage\Dependency\Client\PersistentCartSha
 
 class PersistentCartSharePageFactory extends AbstractFactory
 {
-    /**
-     * @return \SprykerShop\Yves\PersistentCartSharePage\Dependency\Client\PersistentCartSharePageToPersistentCartShareClientInterface
-     */
     public function getPersistentCartShareClient(): PersistentCartSharePageToPersistentCartShareClientInterface
     {
         return $this->getProvidedDependency(PersistentCartSharePageDependencyProvider::CLIENT_PERSISTENT_CART_SHARE);

@@ -22,11 +22,6 @@ class PersistentCartSharePageControllerProvider extends AbstractYvesControllerPr
      */
     protected const ROUTE_CART_PREVIEW = 'cart/preview';
 
-    /**
-     * @param \Silex\Application $app
-     *
-     * @return void
-     */
     protected function defineControllers(Application $app): void
     {
         $this->addPersistentCartSharePagePreviewRoute();

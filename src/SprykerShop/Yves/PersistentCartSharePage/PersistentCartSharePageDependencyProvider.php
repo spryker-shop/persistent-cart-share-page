@@ -26,11 +26,6 @@ class PersistentCartSharePageDependencyProvider extends AbstractBundleDependency
      */
     public const PLUGIN_APPLICATION = 'PLUGIN_APPLICATION';
 
-    /**
-     * @param \Spryker\Yves\Kernel\Container $container
-     *
-     * @return \Spryker\Yves\Kernel\Container
-     */
     public function provideDependencies(Container $container): Container
     {
         $container = parent::provideDependencies($container);
@@ -40,11 +35,6 @@ class PersistentCartSharePageDependencyProvider extends AbstractBundleDependency
         return $container;
     }
 
-    /**
-     * @param \Spryker\Yves\Kernel\Container $container
-     *
-     * @return \Spryker\Yves\Kernel\Container
-     */
     protected function addPersistentCartShareClient(Container $container): Container
     {
         $container->set(static::CLIENT_PERSISTENT_CART_SHARE, function (Container $container) {

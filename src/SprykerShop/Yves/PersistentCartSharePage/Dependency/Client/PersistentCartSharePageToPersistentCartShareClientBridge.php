@@ -25,11 +25,6 @@ class PersistentCartSharePageToPersistentCartShareClientBridge implements Persis
         $this->persistentCartShareClient = $persistentCartShareClient;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ResourceShareRequestTransfer $resourceShareRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\QuoteResponseTransfer
-     */
     public function getPreviewQuoteResourceShare(ResourceShareRequestTransfer $resourceShareRequestTransfer): QuoteResponseTransfer
     {
         return $this->persistentCartShareClient->getPreviewQuoteResourceShare($resourceShareRequestTransfer);
